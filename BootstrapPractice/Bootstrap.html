@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet"  href="bootstrap.min.css">
+    <meta content="width=device-width, initial-sclale=1" 
+    name="viewport">
+        <!--Для адаптации экрана-->
+    <link rel="stylesheet" href="Bootstrap.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <header>
+        <div class="bg-light collapse" id="header-hide">
+            <div class="container">
+                <!--КОНТЕЙНЕР ДОБАВЛЯЕТСЯ ДЛЯ ОДИНАКОВЫХ ОТСТУПОВ СЛЕВА И СПРАВА-->
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4>Про Bootstrap</h4>
+                        <p class="text-muted">Bootstrap - свободный набор инструментов для создания сайтов и веб-приложений. Включает в себя HTML и CSS шаблоны оформления для типографики, веб форм, кнопок, меток, блоков навигации и прочих компонентов веб-интерфейса, включая JavaScript расширения.</p>
+                        <div class="col-sm-4 col-md-5 py-4">
+                        <h4>Ссылки на документацию</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="https://getbootstrap.su/docs/5.3/layout/grid/" class="text-muted">Система сеток</a></li>
+                            <li><a href="https://getbootstrap.su/docs/5.3/components/buttons/" class="text-muted">Кнопки</a></li>
+                            <li><a href="https://getbootstrap.su/docs/5.3/components/card/" class="text-muted">Карточки(пример ниже)</a></li>
+                            <li><a href="https://getbootstrap.su/docs/5.3/components/navbar/" class="text-muted">Панель навигации</a></li>
+                            <li><a href="https://cheatsheet.getbootstrap.su/" class="text-muted">Шпаргалка</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--БЛОК СКРЫТ ИЗ-ЗА КЛАССА COLLAPSE, ОТКРЫВАЕТСЯ ПО КНОПКЕ-->
+
+        <div class="navbar navbar-light bg-light shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand fw-bold">Документация Bootstrap</a>
+                <button type="buttom" class="navbar-toggler collapese" 
+                data-bs-toggle="collapse"
+                data-bs-target="#header-hide">
+                <!--Target указывает на id блока, к которому будет применен collapse-->
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+
+            </div>
+        </div>
+
+
+    </header>
+
+    <div class="jumbotron p-4 py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="display-3">Большой заголовок</h1>
+                    <p class="lead my-3">Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Quae, impedit? Quia repellat sed nisi 
+                        nostrum dolor mollitia harum expedita voluptate.</p>
+                        <button class="btn btn-warning"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal-window"
+                        >Модальное окно</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" my-5>
+        <h1>Новости</h1>
+        <div class="d-flex flex-wrap justify-content-between">
+            <div class="card mb-4 shadow-sm">
+                <img src="https://avatars.mds.yandex.net/i?id=af59b3d5312254841b9cfdbb87f28306a2fada1c-9145122-images-thumbs&n=13" alt="Foto" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga libero tempora aliquam deleniti quas ullam dignissimos recusandae nemo aliquid placeat.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Посмотреть</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Изменить</button>
+                        </div>
+                        <small class="text-muted">11.07.2023</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <img src="https://avatars.mds.yandex.net/i?id=af59b3d5312254841b9cfdbb87f28306a2fada1c-9145122-images-thumbs&n=13" alt="Foto" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga libero tempora aliquam deleniti quas ullam dignissimos recusandae nemo aliquid placeat.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Посмотреть</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Изменить</button>
+                        </div>
+                        <small class="text-muted">11.07.2023</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <img src="https://avatars.mds.yandex.net/i?id=af59b3d5312254841b9cfdbb87f28306a2fada1c-9145122-images-thumbs&n=13" alt="Foto" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga libero tempora aliquam deleniti quas ullam dignissimos recusandae nemo aliquid placeat.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Посмотреть</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Изменить</button>
+                        </div>
+                        <small class="text-muted">11.07.2023</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-top">
+        <p>Footer прижат с помощью flexbox</p>
+    
+    </footer>
+
+    <div class="modal fade" id="modal-window" tabindex="-1" role="dialog" 
+    aria-labelledby="modal-window-label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-window-label">Название</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+                    </button>
+                </div>
+                <div class="modal-body"><p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Iusto repellendus aliquid necessitatibus. Sequi 
+                    numquam odio aspernatur officia dolores suscipit, vero saepe pariatur 
+                    eius labore. Non dolorem natus magni aspernatur ea.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="close">
+                    Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <!--<script src="bootstrap.min.js"></script>-->
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+.navbar-toggler {
+    outline: none!important;
+}
+/*Important устанавливает приоритет, в bootstrap стоит по умолчанию(не везде)*/
+.navbar-toggler:hover{
+    background: #73b3d3;
+}
+.card {
+    width: 300px;
+}
+footer{
+    padding: 30px 0;
+    color: #000000;
+    background-color: #73b3d3;
+    text-align: center;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer {
+    margin-top: auto;
+  }
